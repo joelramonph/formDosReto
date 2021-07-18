@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/css.css">
+    <title>formulario</title>
+  </head>
+  <body id="fondo">
+    <div class="content">
+      <header id="title">
+        <h1>JivitedAcademia Inscripción</h1>
+        <p id="description">Gracias por ayudarnos a mejorar</p>
+      </header>
+      <form id="survey-form" class="" action="index.html" method="post">
+        <label for="name_label">Nombre</label>
+        <input id="name_label"type="text" name="info" value="" placeholder="Ingrese nombre" required>
+        <label for="email_label">Email</label>
+        <input id="email_label" type="email" name="info" value="" placeholder="Ingrese Email" required>
+        <label for="number_label">Edad</label>
+        <input id="number_label" type="number" name="info" value="" placeholder="Edad" min="18" max="100"><br>
+
+        <label for="dropdown">¿Cuál opción describe mejor su rol?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="seleccione">Seleccione su rol actual</option>
+          <option value="estudiante">Estudiante</option>
+          <option value="empleado">Empleado</option>
+          <option value="freelance">Freelance</option>
+          <option value="emprendedor">Emprendedor</option>
+          <option value="empresario">Empresario</option>
+          <option value="otro">Otro</option>
+        </select><br>
+
+
+
+          <label for="opcion1">
+            <input id="opcion1" type="radio" name="recomend" value="definitivo"  class="rad-input" checked>
+            Definitivamente
+          </label>
+
+
+          <label for="opcion2">
+            <input id="opcion2" type="radio" name="recomend" value="tal_vez"  class="rad-input" checked>
+            Tal Vez
+            </span>
+          </label>
+
+
+          <label for="opcion3">
+            <input id="opcion3" type="radio" name="recomend" value="no_seguro" class="rad-input" checked>
+            No estoy seguro
+          </label><br>
+
+          <label for="">¿Cuál es la característica que más gusta de JivitedAcademia?</label>
+          <select class="" name="">
+            <option value="">Seleccione una opción</option>
+            <option value="">Retos</option>
+            <option value="">Proyectos</option>
+            <option value="">Comunidad</option>
+            <option value="">Código abierto</option>
+          </select><br>
+
+
+
+          <label for="">¿Qué te gustaría mejorar?</label>
+
+          <label class="label-checked" for="frontend"><input class="checked-input" id="frontend" type="checkbox" name="improved" value="frontend" checked>Frontend Projects</label>
+          <label for="backend"><input class="checked-input" id="backend" type="checkbox" name="improved" value="backend">Back-end Projects</label>
+          <label for="data"><input class="checked-input" id="data" type="checkbox" name="improved" value="data">Data Visualization</label>
+          <label for="challenges"><input class="checked-input"id="challenges" type="checkbox" name="improved" value="challenges">Challenges</label>
+          <label for="open"><input class="checked-input" id="open" type="checkbox" name="improved" value="open">Open Source Community</label>
+          <label for="gitter"><input class="checked-input" id="gitter" type="checkbox" name="improved" value="gitter">Gitter help rooms</label><br>
+          <label for="textarea">Agrege comentario o sugerencia</label><br>
+          <textarea id="textarea" name="comentarios" rows="8" cols="95">Ingrese su comentario</textarea>
+
+
+        <button id="submit"type="submit" name="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
